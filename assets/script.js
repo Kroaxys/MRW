@@ -18,14 +18,30 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         console.log(data);
 
+        const cDiv = document.createElement("div");
+        cDiv.className = "infoView"
+
+        
+
         // What needs to be extracted from the data Title, Wiki, source, server_side, client_side, enviroment, raw_icon_url, project_type, loaders, updated, gallery.
         console.log(data.title)
-        console.log(data.wiki_url)
+        let title = data.title
+        console.log(data.description)
+        let description = data.description
+        console.log(data.wiki_url)  
+        let wiki_url = data.wiki_url
         console.log(data.source_url)
+        let source_url = data.source_url
         console.log(data.server_side)
+        let server_side = data.server_side
         console.log(data.client_side)
+        let client_side = data.client_side
+        const envDiv = document.createElement("div");
         data.environment.forEach(n => {
             console.log(n)
+            let p = document.createElement("p")
+            p.textContent = n
+            envDiv.appendChild(p)
         })
         console.log(data.raw_icon_url)
         console.log(data.project_type)

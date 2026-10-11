@@ -1,0 +1,15 @@
+.project img {
+    width: 100px;
+}
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+.infoView{
+    display: flex;
+}
+.intro,.url,.side,.load {
+    height: fit-content;
+}

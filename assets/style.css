@@ -1,1 +1,19 @@
-/*# sourceMappingURL=style.css.map */
+.project img {
+  width: 100px;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+
+.infoView {
+  display: flex;
+}
+
+.intro, .url, .side, .load {
+  height: -moz-fit-content;
+  height: fit-content;
+}/*# sourceMappingURL=style.css.map */

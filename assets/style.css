@@ -1,3 +1,8 @@
+body {
+  background-color: #000;
+  color: rgb(176, 182, 188);
+}
+
 .project img {
   width: 100px;
 }
@@ -7,13 +12,19 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
+
 }
 
 .infoView {
   display: flex;
+  border-radius: 1rem;
+  background-color: #27292e ;
+  margin-top: 3vh;
+  padding: 1rem;
 }
 
 .intro, .url, .side, .load {
   height: -moz-fit-content;
   height: fit-content;
 }/*# sourceMappingURL=style.css.map */
+

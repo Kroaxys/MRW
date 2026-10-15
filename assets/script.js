@@ -136,6 +136,12 @@ document.addEventListener("DOMContentLoaded", async function () {
         p.textContent = text
         div.appendChild(p)
     }
+    function addToDivText(div, text, helloCodeReader){
+        let p = document.createElement("p")
+        p.textContent = text
+        p.className = helloCodeReader
+        div.appendChild(p)
+    }
     function addToDivLink(div, link, text){
         let a = document.createElement("a")
         a.href = link

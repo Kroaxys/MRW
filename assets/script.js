@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         console.log(data);
 
-        
+
         const cDiv = document.createElement("div");
         cDiv.className = "infoView"
 
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         let raw_icon_url = data.raw_icon_url
         let projectImg = document.createElement("img")
         projectImg.src = raw_icon_url
-        
+
         console.log(data.project_type)
         let project_type = data.project_type.toUpperCase()
         addToDivText(projectDiv, project_type)
@@ -48,10 +48,10 @@ document.addEventListener("DOMContentLoaded", async function () {
         let description = data.description
         let introDiv = document.createElement("div")
         introDiv.className = "intro"
-        addToDivText(introDiv, title)
-        addToDivText(introDiv, description)
+        addToDivText(introDiv, title, "text1.5")
+        addToDivText(introDiv, description, "description")
         cDiv.appendChild(introDiv)
-             
+
         // let titleP = document.createElement("p")
         // let descriptionP = document.createElement("p")
 
@@ -60,14 +60,14 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         // descriptionP.textContent = description
         // introDiv.appendChild(descriptionP)
-        
+
 
 
         //temp
 
         let urlDiv = document.createElement("div")
         urlDiv.className = "url"
-        console.log(data.wiki_url)  
+        console.log(data.wiki_url)
         let wiki_url = data.wiki_url
         console.log(data.source_url)
         let source_url = data.source_url
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             envDiv.appendChild(p)
         })
 
-        
+
 
         var loadDiv = document.createElement("div")
         loadDiv.className = "load"
@@ -131,18 +131,16 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
 
-    function addToDivText(div, text){
+
+    function addToDivText(div, text, helloCodeReader) {
         let p = document.createElement("p")
         p.textContent = text
+        if (helloCodeReader) {
+            p.className = helloCodeReader
+        }
         div.appendChild(p)
     }
-    function addToDivText(div, text, helloCodeReader){
-        let p = document.createElement("p")
-        p.textContent = text
-        p.className = helloCodeReader
-        div.appendChild(p)
-    }
-    function addToDivLink(div, link, text){
+    function addToDivLink(div, link, text) {
         let a = document.createElement("a")
         a.href = link
         a.textContent = text

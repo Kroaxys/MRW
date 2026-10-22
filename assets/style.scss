@@ -7,9 +7,19 @@
     flex-direction: column;
     align-content: center;
 }
-.infoView{
-    display: flex;
+.infoView {
+  display: flex;
+  border-radius: 1rem;
+  background-color: #27292e ;
+  margin-top: 3vh;
+  padding: 1rem;
 }
 .intro,.url,.side,.load {
     height: fit-content;
+}
+
+body {
+  background-color: #000;
+  color: rgb(176, 182, 188);
+  margin: 0;
 }

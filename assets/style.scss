@@ -1,5 +1,9 @@
+*{
+  margin:0;
+}
+
 .project img {
-    width: 7vh;
+    width: 7vw;
 }
 #content{
     display: flex;
@@ -22,4 +26,13 @@ body {
   background-color: #000;
   color: rgb(176, 182, 188);
   margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(176, 182, 188);
+}
+
+.description{
+  width: 30vw;
 }

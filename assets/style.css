@@ -1,10 +1,7 @@
-*{
+* {
   margin: 0;
 }
-body {
-  background-color: #000;
-  color: rgb(176, 182, 188);  
-}
+
 .project img {
   width: 7vw;
 }
@@ -29,8 +26,17 @@ body {
   height: fit-content;
 }
 
-.description{
-  width: 30vw;
+body {
+  background-color: #000;
+  color: rgb(176, 182, 188);
+  margin: 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+a {
+  text-decoration: none;
+  color: rgb(176, 182, 188);
+}
+
+.description {
+  width: 30vw;
+}/*# sourceMappingURL=style.css.map */

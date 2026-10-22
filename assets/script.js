@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         console.log(data.project_type)
         let project_type = data.project_type.toUpperCase()
-        addToDivText(projectDiv, project_type)
+        addToDivText(projectDiv, project_type, "text0.6")
         projectDiv.appendChild(projectImg)
         cDiv.appendChild(projectDiv)
         //---
@@ -71,8 +71,11 @@ document.addEventListener("DOMContentLoaded", async function () {
         let wiki_url = data.wiki_url
         console.log(data.source_url)
         let source_url = data.source_url
+        console.log(data.discord_url)
+        let discord_url = data.discord_url
         addToDivLink(urlDiv, wiki_url, "Wiki")
         addToDivLink(urlDiv, source_url, "Source")
+        addToDivLink(urlDiv, discord_url, "Discord")
         cDiv.appendChild(urlDiv)
 
         let sideDiv = document.createElement("div")
@@ -142,6 +145,9 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
     function addToDivLink(div, link, text) {
         let a = document.createElement("a")
+        if (link == null){
+            return
+        }
         a.href = link
         a.textContent = text
         div.appendChild(a)

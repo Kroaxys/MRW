@@ -20,8 +20,15 @@
 }
 .intro,.url,.side,.load {
     height: fit-content;
+    margin-left: 1rem;
 }
-
+.url {
+  flex-direction: column;
+  display: flex;
+  gap: 0rem;
+  
+  font-weight: 600;
+}
 body {
   background-color: #000;
   color: rgb(176, 182, 188);
@@ -34,5 +41,11 @@ a{
 }
 
 .description{
-  width: 30vw;
+  width: 30vw;  
+}
+.text1\.5 {
+  font-size: 1.5rem;
+}
+.text0\.6{
+  font-size: 0.6rem;
 }

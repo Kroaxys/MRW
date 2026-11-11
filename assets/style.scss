@@ -26,8 +26,12 @@
   flex-direction: column;
   display: flex;
   gap: 0rem;
+  width: 3.5rem;
   
   font-weight: 600;
+}
+.side{
+  width: 10rem;
 }
 body {
   background-color: #000;

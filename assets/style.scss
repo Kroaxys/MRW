@@ -1,0 +1,56 @@
+*{
+  margin:0;
+}
+
+.project img {
+    width: 7rem;
+}
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+.infoView {
+  display: flex;
+  border-radius: 1rem;
+  background-color: #27292e ;
+  margin-top: 3vh;
+  padding: 1rem;
+}
+.intro,.url,.side,.load {
+    height: fit-content;
+    margin-left: 1rem;
+}
+.url {
+  flex-direction: column;
+  display: flex;
+  gap: 0rem;
+  width: 3.5rem;
+  
+  font-weight: 600;
+}
+.side{
+  width: 10rem;
+}
+body {
+  background-color: #000;
+  color: rgb(176, 182, 188);
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(176, 182, 188);
+  margin-bottom: 0.2rem;
+}
+
+.description{
+  width: 30vw;  
+}
+.text1\.5 {
+  font-size: 1.5rem;
+}
+.text0\.6{
+  font-size: 0.6rem;
+}
